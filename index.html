@@ -17,33 +17,36 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* Fondo sutil gris/azul de Microsoft, puedes cambiarlo por una imagen de fondo si prefieres */
+            
+            /* Fondo para GitHub Pages */
+            background-image: url('fondo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             background-color: #ebeeef; 
-            background-image: linear-gradient(135deg, #f3f2f1 0%, #e1dfdd 100%);
         }
 
         .login-box {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.96); 
             width: 440px;
             padding: 44px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-            border-radius: 0px; /* Microsoft usa esquinas completamente rectas o con un radio mínimo de 2px */
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 0px; 
         }
 
         .logo-container {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             text-align: left;
         }
 
         .logo-placeholder {
-            max-height: 36px;
+            max-height: 45px; 
             max-width: 100%;
             object-fit: contain;
         }
 
-        /* Si no tienes el logo en imagen, este texto simula el estilo */
         .brand-text {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 600;
             color: #444;
         }
@@ -66,15 +69,16 @@
             padding: 6px 10px;
             font-size: 15px;
             border: none;
-            border-bottom: 1px solid #605e5c; /* Línea inferior típica de Microsoft */
+            border-bottom: 1px solid #605e5c; 
             outline: none;
             transition: border-color 0.2s;
             margin-top: 4px;
+            background: transparent;
         }
 
         input[type="text"]:focus, 
         input[type="password"]:focus {
-            border-bottom: 2px solid #0067b8; /* Azul clásico de Microsoft */
+            border-bottom: 2px solid #0067b8; 
         }
 
         .links-container {
@@ -94,7 +98,7 @@
 
         .button-group {
             display: flex;
-            justify-content: flex-end; /* Alinea el botón a la derecha como Microsoft */
+            justify-content: flex-end; 
         }
 
         button {
@@ -124,8 +128,9 @@
 <body>
 
     <div class="login-box">
+        
         <div class="logo-container">
-            <img src="logo_fdn.png" alt="FDN" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
+            <img src="logo.png" alt="FDN" class="logo-placeholder" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
             <span id="text-logo" class="brand-text" style="display:none;">FDN</span>
         </div>
 
