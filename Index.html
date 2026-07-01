@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acceso FDN</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            margin: auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 10px solid #ccc; /* Añadido un borde básico para mejorar la estética */
+            border-radius: 5px;
+            box-sizing: border-box; /* Evita que el padding deforme el ancho del input */
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
+        
+        .footer-text {
+            font-size: 10px; 
+            color: gray; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Portal Corporativo FDN</h2>
+        <p>Acceso seguro</p>
+
+        <form onsubmit="event.preventDefault(); alert('Simulación de acceso');">
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <p class="footer-text">
+            Entorno de prueba controlado
+        </p>
+    </div>
+
+</body>
+</html>
